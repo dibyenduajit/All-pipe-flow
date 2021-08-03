@@ -1,0 +1,70 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1912                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _f3950763fe-20191219 OPENFOAM=1912
+Arch   : "LSB;label=32;scalar=64"
+Exec   : createPatch -parallel -overwrite
+Date   : Aug 01 2021
+Time   : 12:58:59
+Host   : dibyendu-VirtualBox
+PID    : 4804
+I/O    : uncollated
+Case   : /home/dibyendu/openfoam_try/parallel_cylinder_pisoFoam_RAS
+nProcs : 3
+Hosts  :
+(
+    (dibyendu-VirtualBox 3)
+)
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh for time = 0
+
+Reading "system/createPatchDict"
+
+Adding new patch topPatch as patch 1 from 
+{
+    type            patch;
+}
+
+Adding new patch wall as patch 2 from 
+{
+    type            wall;
+}
+
+Adding new patch bottomPatch as patch 3 from 
+{
+    type            patch;
+}
+
+
+Read 1768 faces from faceSet topPatch
+Read 46048 faces from faceSet wall
+Read 1768 faces from faceSet bottomPatch
+
+Doing topology modification to order faces.
+
+Not synchronising points.
+
+Removing patches with no faces in them.
+
+Removing zero-sized patch cylinder type wall at position 0
+Removing patches.
+Writing repatched mesh to 0
+
+End
+
+Finalising parallel run
